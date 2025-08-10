@@ -1,27 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        Student student1 = new Student("Abdulkadir",18, 8.8);
-        Student student2 = new Student("Alfisha",19, 9.9);
-        Student student3 = new Student("Zed",18, 9.28);
+        Student student1 = new Student("Abdulkadir", 18, 8.8);
+        Student student2 = new Student("Alfisha", 19, 9.9);
+        Student student3 = new Student("Zed", 18, 9.28);
+        Student student4 = new Student("MZed", 18, 9.22);
 
-        System.out.println(student1.name);
-        System.out.println(student1.age);
-        System.out.println(student1.cgpa);
+        Student students[] = { student1, student2, student3, student4 };
 
-        System.out.println();
+        for (Student student : students) {
+            student.display();
+            System.out.println();
+        }
 
-        System.out.println(student2.name);
-        System.out.println(student2.age);
-        System.out.println(student2.cgpa);
-        student2.display();
-
-        System.out.println();
-
-        System.out.println(student3.name);
-        System.out.println(student3.age);
-        System.out.println(student3.cgpa);
+        Student.showStudent();
     }
- 
-    
+
 }
